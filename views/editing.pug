@@ -1,10 +1,14 @@
 extends ./layout.pug
 
 block content
+  div.box.col-md-10.col-md-offset-1
+    p This is the div with an id of box
   div#editing.col-md-8.col-md-offset-2
     h1 Let's edit this page!
     h3 You should set:
     ul.list
+      li 
+        Put me in the list!
       li
         span.error The body's background to #EEE
       li
@@ -26,5 +30,4 @@ block content
           | Force this 
           a(href='#') link
           |  to show its hover state
-
-    li Put me in the list!
+     
